@@ -1,13 +1,21 @@
-body{
-
-    
-}
-h1 {
-    color: blueviolet;
-    border-radius: 6%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-button{
-    border-radius: 6%;
-    color: black;
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  li{
+    display: inline;
+  }
+  .header{
+    color: aliceblue;
+    background-color: black;
+  }
