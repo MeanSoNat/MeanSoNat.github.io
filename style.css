@@ -1,6 +1,13 @@
+body{
+
+    
+}
 h1 {
     color: blueviolet;
     border-radius: 6%;
-    
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+    border-radius: 6%;
+    color: black;
 }
