@@ -5,21 +5,44 @@
 }
 
 body {
-  background: #444;
-  color: #fff;
+  background-color: #1d1d1d;
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
+.btn-primary {
+  color: #ffff;
+  /* background-color: #919191; */
+  border-color: #60849b;
+  /* border: chocolate; */
+}
+
 p {
   margin: 0 0 13px 0;
+  color: #ffff;
 }
 
 a {
   color: #fff;
 }
 
+.card{
+  background-color: #000000;
+  color: #fff;
+}
 .center { text-align: center; }
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: rgb(92, 10, 0);
+  text-align: center;
+  white-space: nowrap;
+  background-color: rgb(208, 184, 102);
+  transition: width 0.6s ease 0s;
+}
 
 .container {
   width: 95%;
@@ -45,7 +68,7 @@ a {
 }
 
 .episode__content {
-  border-top: 2px solid #fff;
+  border-top: 2px solid rgb(173, 0, 0);
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 10px;
@@ -70,4 +93,20 @@ a {
   .episode__content .story {
     font-size: 15px;
   }
+}
+
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+hr{
+  color: #fff;
 }
