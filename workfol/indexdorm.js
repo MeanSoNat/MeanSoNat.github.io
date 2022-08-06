@@ -5,7 +5,6 @@
 //     let node = document.createTextNode(get)
 //     list.appendChild(node)
 
-    
 //     //create condition for null text
 //     if (get === '') {
 //         alert('Please write something')
@@ -23,16 +22,13 @@
     e.appendChild(list) นำ list อันใหม่ที่สร้างใส่เข้าไป
 */
 
-
-document.querySelector('#Add').onclick = function (){
-    if(document.querySelector('#new_todo input').value.length == 0){
-        alert('Please write anything!')
-    } 
-    else {
-        document.querySelector('#task').innerHTML += 
-        `<div class="task">
+document.querySelector("#Add").onclick = function () {
+  if (document.querySelector("#new_todo input").value.length == 0) {
+    alert("Please write anything!");
+  } else {
+    document.querySelector("#task").innerHTML += `<div class="task">
             <span id="taskname" class="col-4">
-                ${document.querySelector('#new_todo input').value}
+                ${document.querySelector("#new_todo input").value}
                 </span>
                 <button class="delete">
                     <i class="bi bi-trash col-6"></i>
@@ -41,12 +37,11 @@ document.querySelector('#Add').onclick = function (){
         </div>
         `;
 
-        var current_task = document.querySelectorAll('.delete');
-        for (var i=0; i< current_task.length; i++){
-            current_task[i].onclick = function (){
-                this.parentNode.remove();
-            }
-        }
+    var current_task = document.querySelectorAll(".delete");
+    for (var i = 0; i < current_task.length; i++) {
+      current_task[i].onclick = function () {
+        this.parentNode.remove();
+      };
     }
-}
-
+  }
+};
