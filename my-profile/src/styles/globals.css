@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background--color: rgba(0 0 0 0.1);
+}
+
+body {
+  background-image: url("/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: blue;
+}
+
+.text-grow {
+  text-shadow: 0px 5px 5px rgb(100 100 255 / 73%);
+  transition: ease-in-out 0.15s;
+}
+.text-grow:hover {
+  text-shadow: 0px 5px 2px rgb(100 100 255 / 73%);
+}

@@ -1,1 +1,0 @@
-# MeanSoNat.github.io
